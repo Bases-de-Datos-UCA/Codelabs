@@ -72,7 +72,7 @@ Al diseñar una base de datos para un escenario del mundo real, puede ser compli
 Duration: 0:04:00
 
 Se utilizará una herramienta llamada Draw.io, el cual es un sitio web que cuenta con los elementos necesarios para facilitar la realización de diversos tipos de diagrama, incluyendo el Entidad-Relación, y además es gratuito.
-<https://app.diagrams.net/>
+[Draw.io](https://app.diagrams.net/)
 
 <aside class="positive">
     El modelo ER es la base para el diseño exitoso de la base de datos, pero más adelante se mostrará otro modelo y técnicas para mejorar el diseño de la base de datos.
@@ -100,7 +100,7 @@ Duration: 0:03:00
 
 En el diagrama anterior se puede observar que hay ciertos atributos subrayados, esto significa que es un **atributo clave**. Al pensar, por ejemplo, en la entidad ALUMNO (Carné, Nombres, Apellidos, Edad, Carrera), su representación en el modelo ER sería así:
 
-![test](./img/Laboratorio01/diagram2.PNG)
+![test](./img/Laboratorio01/diagram2.JPG)
 
 Y visto en forma de tabla sería así
 
@@ -212,25 +212,33 @@ Analizando algunas cosas que el diagrama anterior representa:
 
 ## Ejercicio práctico
 
-Suponga que una importante compañía aérea le ha encargado el diseño de su base de datos. Realice el desarrollo de la solución tal como lo hicimos en el ejemplo (paso a paso). La descripción del escenario es el siguiente:
+Suponga que una importante compañía aérea le ha encargado el diseño de su base de datos. Realice el desarrollo de la solución tal como lo hicimos en el ejemplo (paso a paso). La descripción del escenario es el siguiente: Una importante compañía aérea necesita una base de datos para registrar la información de sus vuelos.
 
-Una importante compañía aérea necesita una base de datos para registrar la información de sus vuelos.
+Los vuelos están caracterizados por una fecha y los aeropuertos de origen y destino, de cada aeropuerto es importante almacenar el nombre y la ciudad y país donde está ubicado. Notar que cada vuelo tiene relación con dos aeropuertos, uno funciona como origen y el otro como destino.
 
-Los vuelos están caracterizados por un Id, la fecha y los aeropuertos de origen y destino.
+Cada vuelo es realizado por un avión. Los aviones tienen una matrícula que los identifica, el fabricante, un modelo e información sobre su capacidad (número máximo de pasajeros).
 
-Cada vuelo es realizado por un avión. Los aviones tienen una matrícula que los identifica, el fabricante, un modelo e información sobre su capacidad (número máximo de pasajeros) y autonomía de vuelo (en horas).
+Los pasajeros para poder realizar una reserva, deben registrar su nombre, pasaporte, la fecha de nacimiento, un correo electrónico y el país de origen (nacionalidad). Registrados estos datos, la reserva se podrá registrar, en cada reserva se almacena el precio del servicio, la fecha en que fue realizada la transacción y el tipo de reserva (económica, ejecutiva, primera clase.
 
-La tripulación asignada al vuelo está formada por el personal de la propia compañía. De cada trabajador se conoce su id, su nombre y su categoría profesional, así como el puesto que  cupa en cada vuelo en particular.
-
-Por último, para cada vuelo, se almacena la lista completa de pasajeros, con su DNI, el nombre, el asiento que ocupa y su clase (turista, primera o business).
-
-**Autonomía de vuelo**: cuanto tiempo el avión puede pasar en el aire sin caerse Definir:
-
-* Entidades
-* Relaciones
-* Atributos
-* Entidades fuertes y débiles
-* Cardinalidad mínima, máxima y general
-* Participación
+Opcionalmente, un cliente puede incluir servicios extra en cada reserva, como, por ejemplo: wifi satelital, seguros, maletas extra, transporte de mascotas, entre otros. De cada servicio extra, interesa almacenar el nombre del servicio y su precio.
 
 ![test](./img/Laboratorio01/avion.PNG)
+
+## Sobre los autores de esta guía práctica
+
+Autores:  
+  **Versión 1:**
+Emerson Gamaliel Nolasco (00215316@uca.edu.sv), Kevin Enmanuel Velásquez (00018616@uca.edu.sv)      
+  **Versión 2:** 
+Fátima Adriana Renderos (00064018@uca.edu.sv)  
+  **Versión 3:**
+Brian Darwin Carranza Campos (00136020@uca.edu.sv), Alexei Eduardo Quintana Zelidon (00126118@uca.edu.sv)  
+  **Responsables:**
+Erick Varela Guzmán (evarela@uca.edu.sv), Douglas Hernández Torres (dohernandez@uca.edu.sv), 
+Correspondencia: evarela@uca.edu.sv
+
+Departamento de Electrónica e Informática, Universidad Centroamericana José Simeón Cañas, La Libertad, El Salvador.
+
+Versión de este documento: Versión 3, 2022.
+
+![test](./img/Laboratorio01/license.jpg) This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).

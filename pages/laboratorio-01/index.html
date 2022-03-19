@@ -60,7 +60,7 @@
     
       <google-codelab-step label="Modelo Entidad-Relación" duration="3">
         <p>El modelado conceptual es una fase muy importante en el diseño de una base de datos exitosa.Esto se hace por medio del modelo Entidad-Relación, el cuál describe los datos como entidades, relaciones y atributos. El principal objetivo es ilustrar como las entidades se relacionan entre sí en un sistema.</p>
-<p class="image-container"><img alt="test" src="img\\b6dd94b42d13cb40.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\f782b2b6d90dd9c.PNG"></p>
 <h2 is-upgraded>Elementos del Modelo Entidad-Relación</h2>
 <p><strong>Entidad:</strong> representa una <em>cosa u objeto</em> del mundo real con existencia independiente. Una entidad puede ser un objeto con existencia física, conocida como <strong>entidad concreta</strong> (por ejemplo: una persona, un carro, una casa, etc.) o un objeto con existencia conceptual, conocida como <strong>entidad abstracta</strong> (por ejemplo: un puesto de trabajo, una asignatura, un préstamo, etc.).</p>
 <p><strong>Atributos:</strong> son las características que definen o identifican a una entidad. Estas pueden ser muchas pero el diseñador solo utiliza o implementa las que considere <strong>más relevantes.</strong> Los tipos de atributos son: simples, compuestos, monovaluados, multivaluados, derivados y nulos.</p>
@@ -74,7 +74,7 @@
       </google-codelab-step>
     
       <google-codelab-step label="Diagramas ER" duration="4">
-        <p>Se utilizará una herramienta llamada Draw.io, el cual es un sitio web que cuenta con los elementos necesarios para facilitar la realización de diversos tipos de diagrama, incluyendo el Entidad-Relación, y además es gratuito. <a href="https://app.diagrams.net/" target="_blank">https://app.diagrams.net/</a></p>
+        <p>Se utilizará una herramienta llamada Draw.io, el cual es un sitio web que cuenta con los elementos necesarios para facilitar la realización de diversos tipos de diagrama, incluyendo el Entidad-Relación, y además es gratuito. <a href="https://app.diagrams.net/" target="_blank">Draw.io</a></p>
 <aside class="special"><p>     El modelo ER es la base para el diseño exitoso de la base de datos, pero más adelante se mostrará otro modelo y técnicas para mejorar el diseño de la base de datos. </p>
 </aside>
 <h2 is-upgraded>Ejemplo práctico – Inscripción de materias</h2>
@@ -95,9 +95,9 @@
       <google-codelab-step label="Restricciones Estructurales" duration="3">
         <h2 is-upgraded>Atributos clave</h2>
 <p>En el diagrama anterior se puede observar que hay ciertos atributos subrayados, esto significa que es un <strong>atributo clave</strong>. Al pensar, por ejemplo, en la entidad ALUMNO (Carné, Nombres, Apellidos, Edad, Carrera), su representación en el modelo ER sería así:</p>
-<p class="image-container"><img alt="test" src="img\\b2c2e3a91a78911b.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\32fff2b805327eb6.JPG"></p>
 <p>Y visto en forma de tabla sería así</p>
-<p class="image-container"><img alt="test" src="img\\63d8f055001c723d.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\aae2a21f64b8cbdd.PNG"></p>
 <p>Seguramente notó que los campos en rojo son datos repetidos, pero, si observan, ningún valor del atributo <em>Carné</em> se repite, y tampoco debería hacerlo, pues es el <strong><em>atributo clave</em></strong> o, dicho de otra manera, el <strong>identificador único</strong> para cada alumno. Por ejemplo, para las personas salvadoreñas mayores de edad, el atributo clave sería el DUI.</p>
 <aside class="special"><p><strong>NOTA:</strong> Hay entidades que pueden tener más de un atributo que pueden funcionar como atributo clave. </p>
 </aside>
@@ -109,13 +109,13 @@
       <google-codelab-step label="Restricciones de cardinalidad" duration="2">
         <p>Se refiere al número máximo de ocurrencias que una entidad puede tener con otra entidad con la cual esté relacionada. Los posibles tipos de cardinalidad son <strong>1:1, 1:N, N:1, M:N</strong> (también conocido como <strong>N:N</strong>).</p>
 <p><strong>Uno a Uno (1:1)</strong> En este ejemplo particular, DIRIGE representa la relación de las entidades EMPLEADO y DEPARTAMENTO, indicando que, en algún punto, un empleado puede administrar máximo un departamento, y que un departamento solo puede tener un administrador. También cabe destacar, que no necesariamente todos los empleados serán administradores de algún departamento.</p>
-<p class="image-container"><img alt="test" src="img\\88211a73d2ed401b.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\cb42cd4a08434719.PNG"></p>
 <p><strong>Uno a muchos (1:N)</strong> En este ejemplo, un departamento puede gestionar varios proyectos, pero cada proyecto solo puede ser gestionado por un departamento.</p>
-<p class="image-container"><img alt="test" src="img\\257fa63d20b468f0.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\f4e2ffde25661a77.PNG"></p>
 <p><strong>Muchos a uno (N:1)</strong> Aquí se indica que un empleado puede trabajar únicamente para un departamento, pero un departamento puede tener varios empleados. Si observamos, este en realidad es muy similar al anterior, pero en el sentido contrario.</p>
-<p class="image-container"><img alt="test" src="img\\946d78eab1d01311.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\9f48f7b0ae9719ed.PNG"></p>
 <p><strong>Muchos a muchos (M:N)</strong> Aquí se indica que un empleado puede trabajar en muchos proyectos y que en un proyecto pueden trabajar varios empleados.</p>
-<p class="image-container"><img alt="test" src="img\\62e6bbabacb69cb4.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\a20fa003fb41fd86.PNG"></p>
 
 
       </google-codelab-step>
@@ -123,7 +123,7 @@
       <google-codelab-step label="Restricciones de participación" duration="2">
         <p>Específica si la existencia de una entidad depende de un tipo de relación con otra entidad. Se denomina <strong><em>participación total</em></strong> cuando cada ocurrencia de la entidad A participa, al menos, en una relación de R con una ocurrencia de la entidad B. Por el contrario, cuando existe, al menos, una ocurrencia de A que <strong>NO</strong> PARTICIPA en alguna relación R con una ocurrencia de la entidad B, se le conoce como <strong><em>participación parcial</em></strong>. Observe el siguiente ejemplo para comprender mejor:</p>
 <p><strong>Ejemplo:</strong> En la universidad todos los estudiantes activos reciben materias de sus carreras. Al haber cursado la materia y al haber cumplido ciertos requisitos, estos pueden impartir dicha materia como instructores.</p>
-<p class="image-container"><img alt="test" src="img\\d3f5af75af813dc.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\9695f508abb1db6c.PNG"></p>
 <p><strong>Participación total:</strong> toda ocurrencia de un estudiante activo debe participar en el tipo de relación RECIBE con alguna materia, ya que no tiene sentido que exista un estudiante que NO reciba una materia. <strong>Participación parcial:</strong> con respecto a la relación IMPARTE, no todo estudiante imparte una materia, o, dicho de otra forma, existe al menos un estudiante que NO imparta una materia, y por tanto se considera como participación parcial.</p>
 
 
@@ -132,12 +132,12 @@
       <google-codelab-step label="Mínimos y máximos" duration="2">
         <p>En una relación entre dos entidades los mínimos representan la participación (total o parcial) y los máximos la cardinalidad (1:1, 1:N, N:1, N:N).</p>
 <p>Los mínimos pueden tomar los valores cero o uno (0 o 1), mientras que los máximos pueden ser uno o muchos (1 o N). Por último, la cardinalidad se obtiene cruzando los valores máximos.</p>
-<p class="image-container"><img alt="test" src="img\\36def492e31d6069.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\a11c66c0406373bb.PNG"></p>
 <p>¿Cómo encontrar estos valores? Existen dos preguntas que facilitan esta tarea.</p>
 <p><strong>MIN (participación)</strong> ¿<strong>Tiene</strong> A que estar relacionado con algún B? (nótese que tiene demuestra obligación)</p>
 <ul>
-<li><strong>Sí: min = 1</strong> | Participación total <img alt="test" src="img\\3df3212e1d149932.PNG"></li>
-<li><strong>No: min = 0 |</strong> Participación parcial <img alt="test" src="img\\6deaf12f2f2b9c6a.PNG"></li>
+<li><strong>Sí: min = 1</strong> | Participación total <img alt="test" src="img\\a5526e7267980c06.PNG"></li>
+<li><strong>No: min = 0 |</strong> Participación parcial <img alt="test" src="img\\a667fb8217b003bb.PNG"></li>
 </ul>
 <p>MAX (cardinalidad) ¿<strong>Puede</strong> A estar relacionado con más de un B? (nótese que puede demuestra elección)</p>
 <ul>
@@ -151,7 +151,7 @@
       <google-codelab-step label="Entidades fuertes y débiles" duration="4">
         <p>En una relación entre dos entidades (A y B) decimos que la entidad B es débil con respecto a la entidad A, si la entidad B depende de que exista A primero. Las entidades débiles se representan con un doble rectángulo.</p>
 <p>Ocupe el siguiente ejemplo para asimilarlo mejor: &#34;Un cliente solicita un préstamo&#34;. Para solicitar el préstamo, el cliente tuvo que existe primero. Un préstamo no se puede asignar al vacío, es por eso que el préstamo existe cuando el cliente lo solicita.</p>
-<p class="image-container"><img alt="test" src="img\\9243cc8e3806e808.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\11c87f348c689da2.PNG"></p>
 <p>También existe una pregunta que nos facilita identificar entidades débiles o fuertes. Si se coloca sobre la entidad A y se pregunta <strong>¿Necesita existir B para que exista A?</strong></p>
 <ul>
 <li><strong>SÍ</strong>: A es débil con respecto a B</li>
@@ -169,7 +169,7 @@
       <google-codelab-step label="Entidad-Relación Extendido" duration="1">
         <p>También conocido como Entidad-Relación Ajustado, surge, por supuesto, del modelo Entidad-Relación presentado anteriormente, con la diferencia que, para este, se debe definir las <strong>restricciones estructurales e identificar entidades fuertes y débiles.</strong></p>
 <p>Así se vería el ER extendido del ejemplo de la biblioteca:</p>
-<p class="image-container"><img alt="test" src="img\\1fb2e15686a8789e.PNG"></p>
+<p class="image-container"><img alt="test" src="img\\663e43948663ccc1.PNG"></p>
 <p>Analizando algunas cosas que el diagrama anterior representa:</p>
 <ul>
 <li>Si un escritor está en mi BD significa que tengo AL MENOS UN libro de ese escritor. No tendría lógica tener registrado un escritor del cual no tengo ningún libro.</li>
@@ -181,22 +181,21 @@
       </google-codelab-step>
     
       <google-codelab-step label="Ejercicio práctico" duration="0">
-        <p>Suponga que una importante compañía aérea le ha encargado el diseño de su base de datos. Realice el desarrollo de la solución tal como lo hicimos en el ejemplo (paso a paso). La descripción del escenario es el siguiente:</p>
-<p>Una importante compañía aérea necesita una base de datos para registrar la información de sus vuelos.</p>
-<p>Los vuelos están caracterizados por un Id, la fecha y los aeropuertos de origen y destino.</p>
-<p>Cada vuelo es realizado por un avión. Los aviones tienen una matrícula que los identifica, el fabricante, un modelo e información sobre su capacidad (número máximo de pasajeros) y autonomía de vuelo (en horas).</p>
-<p>La tripulación asignada al vuelo está formada por el personal de la propia compañía. De cada trabajador se conoce su id, su nombre y su categoría profesional, así como el puesto que  cupa en cada vuelo en particular.</p>
-<p>Por último, para cada vuelo, se almacena la lista completa de pasajeros, con su DNI, el nombre, el asiento que ocupa y su clase (turista, primera o business).</p>
-<p><strong>Autonomía de vuelo</strong>: cuanto tiempo el avión puede pasar en el aire sin caerse Definir:</p>
-<ul>
-<li>Entidades</li>
-<li>Relaciones</li>
-<li>Atributos</li>
-<li>Entidades fuertes y débiles</li>
-<li>Cardinalidad mínima, máxima y general</li>
-<li>Participación</li>
-</ul>
+        <p>Suponga que una importante compañía aérea le ha encargado el diseño de su base de datos. Realice el desarrollo de la solución tal como lo hicimos en el ejemplo (paso a paso). La descripción del escenario es el siguiente: Una importante compañía aérea necesita una base de datos para registrar la información de sus vuelos.</p>
+<p>Los vuelos están caracterizados por una fecha y los aeropuertos de origen y destino, de cada aeropuerto es importante almacenar el nombre y la ciudad y país donde está ubicado. Notar que cada vuelo tiene relación con dos aeropuertos, uno funciona como origen y el otro como destino.</p>
+<p>Cada vuelo es realizado por un avión. Los aviones tienen una matrícula que los identifica, el fabricante, un modelo e información sobre su capacidad (número máximo de pasajeros).</p>
+<p>Los pasajeros para poder realizar una reserva, deben registrar su nombre, pasaporte, la fecha de nacimiento, un correo electrónico y el país de origen (nacionalidad). Registrados estos datos, la reserva se podrá registrar, en cada reserva se almacena el precio del servicio, la fecha en que fue realizada la transacción y el tipo de reserva (económica, ejecutiva, primera clase.</p>
+<p>Opcionalmente, un cliente puede incluir servicios extra en cada reserva, como, por ejemplo: wifi satelital, seguros, maletas extra, transporte de mascotas, entre otros. De cada servicio extra, interesa almacenar el nombre del servicio y su precio.</p>
 <p class="image-container"><img alt="test" src="img\\e103e9ae9bae817e.PNG"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sobre los autores de esta guía práctica" duration="0">
+        <p>Autores:<br><strong>Versión 1:</strong> Emerson Gamaliel Nolasco (00215316@uca.edu.sv), Kevin Enmanuel Velásquez (00018616@uca.edu.sv)<br><strong>Versión 2:</strong> Fátima Adriana Renderos (00064018@uca.edu.sv)<br><strong>Versión 3:</strong> Brian Darwin Carranza Campos (00136020@uca.edu.sv), Alexei Eduardo Quintana Zelidon (00126118@uca.edu.sv)<br><strong>Responsables:</strong> Erick Varela Guzmán (evarela@uca.edu.sv), Douglas Hernández Torres (dohernandez@uca.edu.sv), Correspondencia: evarela@uca.edu.sv</p>
+<p>Departamento de Electrónica e Informática, Universidad Centroamericana José Simeón Cañas, La Libertad, El Salvador.</p>
+<p>Versión de este documento: Versión 3, 2022.</p>
+<p><img alt="test" src="img\\2d61b47ed7775e46.jpg"> This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
 
       </google-codelab-step>

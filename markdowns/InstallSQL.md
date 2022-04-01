@@ -1,6 +1,6 @@
 author: Brian Carranza
 summary: Laboratorio sobre el modelo entidad relación
-id: InstallSQL
+id: install-sql
 tags: guide, relationship, entity
 categories: Modelo, Diseño
 environments: Web

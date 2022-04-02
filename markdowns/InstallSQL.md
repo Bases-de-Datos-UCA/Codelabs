@@ -9,6 +9,20 @@ feedback link: https://github.com/01-2022-Bases-de-datos-UCA/Codelabs/issues
 
 # Instalación de SQL
 
+## Requerimientos para instalar SQL developer
+
+![test](./img/InstallSQL/sql.jpg)
+
+* Windows 10 TH1 1507 o una versión superior / Windows Server 2016 o una versión posterior
+* .NET Framework
+* Mínimo: 1GB de RAM / Se recomienda: 4GB de RAM
+* 6GB de espacio disponible en el disco
+* Procesador mínimo: x64: 1,4 GHz / Procesador recomendado: x64 2.0 GHZ o superior
+
+<aside class="positive">
+Nota: Si su equipo no pose los componentes mínimos se le recomienda instalar la versión de <b>SQL Express</b>. Que es muy similar a la instalación de SQL Developer que se desarrolla en esta guía.
+</aside>
+
 ## Descargar SQL Developer
 
 En el siguiente enlace puede enontrar el sitio web para descargar SQL server:

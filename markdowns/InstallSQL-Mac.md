@@ -62,10 +62,8 @@ Regresar a la terminal en donde se deberá ejecutar la siguiente cadena de códi
 
 <aside class="positive">
 <b>Importante:</b>
-<ul>
-<il>En la opción “SA_PASSWORD”, cambiar el valor por tu propia contraseña, por reglas de SQL Server, la contraseña debe contener al menos 8 caracteres, por lo que se sugiere que guardes la contraseña en caso de que sea olvidada</il>
-<il>En la opción “-d”, ir al gestor de docker y copiar el id del contenedor del SQL Server</il>
-</ul>
+<li>En la opción “SA_PASSWORD”, cambiar el valor por tu propia contraseña, por reglas de SQL Server, la contraseña debe contener al menos 8 caracteres, por lo que se sugiere que guardes la contraseña en caso de que sea olvidada</li>
+<li>En la opción “-d”, ir al gestor de docker y copiar el id del contenedor del SQL Server</li>
 </aside>
 
 ![test](./img/InstallSQL-Mac/Paso_11a.png)

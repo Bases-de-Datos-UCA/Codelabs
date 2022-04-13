@@ -61,6 +61,8 @@
 <pre><code language="language-javascript" class="language-javascript"> docker run -e &#34;ACCEPT_EULA=Y&#34; -e &#34;SA_PASSWORD=ESCRIBIR_TU_CONTRASEÑA&#34; -p 1433:1433 --name sqlserver_uca -d ID_DE_CONTENEDOR 
 </code></pre>
 <aside class="special"><p><strong>Importante:</strong></p>
+<p>En la opción &#34;SA_PASSWORD&#34;, cambiar el valor por tu propia contraseña, por reglas de SQL Server, la contraseña debe contener al menos 8 caracteres, por lo que se sugiere que guardes la contraseña en caso de que sea olvidada</p>
+<p>En la opción &#34;-d&#34;, ir al gestor de docker y copiar el id del contenedor del SQL Server</p>
 </aside>
 <p class="image-container"><img alt="test" src="img\\d6dbc467966bce18.png"></p>
 <p class="image-container"><img alt="test" src="img\\f83cf444d24bafb4.png"></p>

@@ -1,8 +1,8 @@
 author: Brian Carranza
-summary: Laboratorio sobre el modelo entidad relación
+summary: Guia de instalacion de Sql Server
 id: install-sql
-tags: guide, relationship, entity
-categories: Modelo, Diseño
+tags: guide, install
+categories: Instalacion
 environments: Web
 status: Published
 feedback link: https://github.com/01-2022-Bases-de-datos-UCA/Codelabs/issues

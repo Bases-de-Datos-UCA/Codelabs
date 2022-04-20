@@ -178,12 +178,12 @@ Los pasajeros para poder realizar una reserva, deben registrar su nombre, pasapo
 
 Opcionalmente, un cliente puede incluir servicios extra en cada reserva, como, por ejemplo: wifi satelital, seguros, maletas extra, transporte de mascotas, entre otros. De cada servicio extra, interesa almacenar el nombre del servicio y su precio.
 
-## Solución Ejercicio Practico
+# **Solución Ejercicio Practico**
 
 
 ![test](./img/laboratorio02/img19.jpeg)
 
-## Tarea de Laboratorio 2 
+# **Tarea de Laboratorio 2**
 
 
 Tomando como base la **solución** del diagrama E-R obtenido del ejercicio realizado de

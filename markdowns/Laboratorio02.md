@@ -1,4 +1,4 @@
-author: Fatima Renderos
+author: Fatima Renderos.
 summary: Modelo Relacional y Normalizado
 id: laboratorio-02
 tags: guide

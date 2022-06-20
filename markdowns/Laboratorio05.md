@@ -52,12 +52,12 @@ nuestra definición de procedimiento. Así:
 
 Ahora que tenemos nuestro procedimiento, la forma de mandarlo a llamar es:
 
-**EXEC nombre_procedimiento**
+`EXEC nombre_procedimiento`
 
-El cual en nuestro caso sería **EXEC listaPrestamoUsuarioLibro.**
+El cual en nuestro caso sería `EXEC listaPrestamoUsuarioLibro.`
 
 
-**Parámetros**
+### Parámetros
 
 Como ya se mencionó, se pueden agregar varios parámetros a los procedimientos, pero
 además de eso se pueden definir también como parámetros de salida, de forma que se
@@ -88,26 +88,26 @@ Es importante destacar que para que estas instrucciones funcionen, debe seleccio
 todo desde la instrucción **DECLARE** hasta **SELECT @count;** y ejecutarse todo al mismo
 tiempo.
 
-**Estructuras de control**
+### Estructuras de control
 
-**IF…ELSE**
+#### IF…ELSE
 
 T-SQL también nos permite utilizar estructuras de control de selección, como lo son if y
 else
 
 ![test](./img/laboratorio05/img6.png)
 
-Ejemplo:
+**Ejemplo:**
 
 ![test](./img/laboratorio05/img7.png)
 
-**WHILE**
+#### WHILE
 
 De igual forma, podemos hacer estructuras de control iterativas. La sintaxis:
 
 ![test](./img/laboratorio05/img8.png)
 
-Ejemplo:
+**Ejemplo:**
 
 ![test](./img/laboratorio05/img9.png)
 
@@ -138,7 +138,7 @@ eliminar datos de tablas.
 Existen 2 tipos principales de funciones. Las **funciones escalares** que devuelven un único
 valor y las **funciones de tabla**, que retornan tablas generadas dentro de la misma.
 
-**Funciones Escalares**
+### Funciones Escalares
 
 Las funciones escalares reciben varios parámetros y devuelven un único valor. Sintaxis:
 
@@ -152,7 +152,7 @@ para modificar la función una vez haya sido creada.
 A continuación, algunos ejemplos de funciones, siempre sobre la base de datos de la
 biblioteca.
 
-Ejemplo
+**Ejemplo**
 
 Dado el código de un libro, se desea obtener el total recaudado por los prestamos de sus
 ejemplares. Si el código dado no existe, devolver -1.
@@ -181,7 +181,7 @@ libros, se puede ejecutar:
 
 De esta forma veríamos cada uno de los títulos registrados junto a su total recaudado
 
-**Funciones de tabla**
+### Funciones de tabla
 
 Este tipo de funciones brinda como valor de retorno una tabla generada dentro de la
 misma. Estas brindan la posibilidad de incluir estructuras de control como IF o WHILE.
@@ -201,8 +201,39 @@ Asimismo, la tabla generada puede ser tomada para sentencias JOIN.
 
 ## Tarea
 
+**Diagrama de la base de datos**
+![test](./img/laboratorio05/er.png)
 
-Pendiente...
+### Ejercicio 1
+
+Crear una función que reciba como parámetros 2 fechas y que retorne una tabla. La función
+deberá retornar el detalle de los vuelos en ese rango de fechas, incluyendo el nombre de
+los aeropuertos de destino y origen, así como el avión que se utilizará para realizar el vuelo.
+
+**Sección del resultado esperado si se ingrese las fechas '01/05/2021' y
+'06/05/2021' cómo parámetros de entrada:**
+![test](./img/laboratorio05/exercise1.png)
+
+### Ejercicio 2
+
+Los clientes VIP tienen acceso a una serie de servicios adicionales en los distintos
+aeropuertos que visitan, por lo que se solicita que defina la lista de clientes VIP.
+El criterio de evaluación consiste en verificar que el promedio de las reservas realizadas
+por un cliente sea mayor a 1799.00. En la evaluación se debe tener en cuenta todos los
+servicios extra que incluyan los clientes en las reservas.
+
+Actualizar la tabla PASAJERO incluyendo una columna con el nombre VIP de tipo entero,
+actualizar con “0” a la columna VIP de todos los pasajeros. Crear un procedimiento almacenado
+que calcule la lista de pasajeros VIP que almacenará en un cursor (Se sugiere realizar
+este paso basándose en el criterio y solución del ejercicio 1 del laboratorio 4), luego,
+el procedimiento almacenado recorrerá el cursor y actualizará la columna VIP de todos los
+pasajeros en la tabla PASAJERO con el valor de “1”.
+
+**Lista de pasajeros VIP en la base de datos:**  
+![test](./img/laboratorio05/exercise2.1.png)
+
+**Sección del resultado esperado si se consulta la tabla PASAJERO:**  
+![test](./img/laboratorio05/exercise2.2.png)
 
 ## Sobre los autores de esta guía práctica
 
